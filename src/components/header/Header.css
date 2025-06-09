@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+    border-bottom: 2px solid white;
+}
+
+.navigation-bar{
+    width: 1160px;
+    height: 57px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+
+.navigation-bar--itemBox{
+    width: 957px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+
+.itemBox--logo{
+    width: 168px;
+    height: 57px;
+    background-image: url('../../assets/vectors/compLogo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.itemBox--items{
+    width: 585px;
+    height: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.aboutUs{
+    color: white !important;
+}
+
+.item{
+    width: auto;
+    height: auto;
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 16px;
+    color: #D6D6D6;
+    cursor: pointer;
+}
+
+.item:hover{
+    color: white;
+}
+
+.language-item{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.language-icon{
+    width: 18px;
+    height: 13px;
+    background-image: url('../../assets/vectors/armenian-lang-flag.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.language-btn{
+    width: 8px;
+    height: 7px;
+    background-image: url('../../assets/vectors/Polygon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.navigation-bar--callBox{
+    width: 162px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid purple; */
+}
+
+.callBox-btn{
+    width: 168px;
+    height: 48px;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(#735D37,#C39F5E);
+}

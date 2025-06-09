@@ -1,0 +1,923 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html{
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.home-mainBanner{
+    width: 100%;
+    height: 628px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: #232323;
+}
+
+.mainBanner-childBox1{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    /* background-color: saddlebrown; */
+}
+
+.blackBackgroundBox{
+    width: 725px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-image: url("../../assets/vectors/homeBanner-box1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 6;
+}
+
+.goldenBackgroundBox{
+    width: 744px;
+    height: 100%;
+    position: absolute;
+    background-image: url("../../assets/vectors/Rectangle42.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    left: 55px;
+}
+
+
+.childBox1--informativeBlock{
+    width: 417px;
+    height: 362px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.informativeBlock--title{
+    width: 417px;
+    height: 192px;
+    font-size: 46px;
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+    text-align: start;
+    /* border: 1px solid blue; */
+}
+
+.informativeBlock--paragraph{
+    width: 398px;
+    height: 46px;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    color: #C7C7C7;
+    text-align: start;
+    /* border: 1px solid red; */
+}
+
+.informativeBlock--btn{
+    width: 200px;
+    height: 60px;
+    /* border: 2px solid purple; */
+}
+
+.informativeBlock--btn > button{
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    background-color: #CCA662;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.mainBanner-childBox2{
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.decorative-box-image{
+    width: 100%;
+    height: 615px;
+    background-image: url("../../assets/images/banner-for-digital-marketing\ 1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.seperator-box{
+    width: 100%;
+    height: 50px;
+    background-color: #232323;
+}
+
+/* About Us Section Styles */
+
+.aboutUs-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #232323;
+}
+
+.aboutUs--headingBox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headingBox-textBox{
+    width: 1000px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.textBox-text{
+    width: auto;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    font-size: 40px;
+    color: #CCA662;
+}
+
+.decorLine-left{
+    width: 40px;
+    height: 10px;
+    background-image: url("../../assets/vectors/decorLine-left.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.decorLine-right{
+    width: 40px;
+    height: 10px;
+    background-image: url("../../assets/vectors/decorLine-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutUs--title{
+    width: 913px;
+    height: 54px;
+    color: #CCCCCC;
+    font-family: "Open Sans";
+}
+
+.aboutUs--container{
+    width: 1050px;
+    height: 452px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid slateblue; */
+}
+
+.images-container{
+    width: 463px;
+    height: 452px;
+    position: relative;
+    /* border: 2px solid olive; */
+}
+
+.rectangle-left{
+    width: 288px;
+    height: 245px;
+    position: absolute;
+    background-color: #858585;
+}
+
+.rectangle-right{
+    width: 154px;
+    height: 205px;
+    position: absolute;
+    left: 302px;
+    top: 47px;
+    background-color: #858585;
+}
+
+.rectangle-bottom{
+    width: 244px;
+    height: 186px;
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+    background-color: #858585;
+}
+
+.services-container{
+    width: 565px;
+    height: 452px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container--item{
+    width: 553px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+}
+
+.container--itemVector{
+    width: 26px;
+    height: 26px;
+    background-image: url("../../assets/vectors/tick-circle.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container--text{
+    text-align: start;
+    color: #CCCCCC;
+    font-family: "Open Sans";
+    font-size: 22px;
+}
+
+.container--btnBox{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.container--btnBox > button{
+    width: 162px;
+    height: 60px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #CCA662;
+}
+
+.decorativeVector{
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    left: 0px;
+    top: -180px;
+    z-index: 10;
+    background-image: url("../../assets/vectors/decorativeVectorr.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.our-successes-Section{
+    width: 100%;
+    height: 538px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #141414;
+}
+
+.successes-headingBox{
+    width: 1000px;
+    height: 208px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+}
+
+.headingBox--paragraph{
+    width: 100%;
+    height: 76px;
+    color: #B1B1B1;
+    font-family: "Open Sans";
+    font-size: 24px;
+}
+
+.oursuccesses-informativeNums{
+    width: 1065px;
+    height: 122px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #494949;
+}
+
+.informativeNums--itemBox{
+    width: auto;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item--name > p{
+    color: white;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.item--nums > p{
+    color: white;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.divider-line{
+    width: 1px;
+    height: 40px;
+    background-color: #EAEAEA;
+}
+
+.cornerDecorative{
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    background-image: url("../../assets/vectors/CornerDecorative.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Services Section */
+
+.services-section{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #232323;
+}
+
+.services-section--heading{
+    width: 100%;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading--text{
+    width: 512px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.services-section--Item-container{
+   width: 1100px;
+   height: 550px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.item-container--box{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerBox--item{
+    width: 268px;
+    height: 262px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #737373;
+}
+
+.item--childBox{
+    width: 144px;
+    height: 117px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.childBox--vector{
+    width: 59px;
+    height: 59px;
+    background-image: url("../../assets/vectors/servicesVector.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.childBox--text{
+    width: 144px;
+    height: 19px;
+    font-family: Arial;
+    font-weight: 600;
+    letter-spacing: 5.5%;
+    color: white;
+    font-size: 16px;
+}
+
+.services-decorativeVector{
+    width: 600px;
+    height: 690px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url("../../assets/vectors/servicesDecorV.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ------------ */
+
+.partners-section{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #232323;
+    gap: 30px;
+}
+
+.partners-section--heading{
+    width: 100%;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.partners-graphic-items{
+    width: 1042px;
+    height: 61px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.partner-item{
+    width: 208px;
+    height: 61px;
+    background-image: url("../../assets/images/partnerLogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.news-section{
+    width: 100%;
+    height: 773px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #232323;
+}
+
+.postItems-Container{
+    width: 1150px;
+    height: 494px;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newPost-item{
+    width: 367px;
+    height: 494px;
+    background-image: url("../../assets/images/Group\ 1779.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.newsSec-decorative{
+    width: 700px;
+    height: 650px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../../assets/vectors/newsSection-decorative.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footerBtn{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerBtn > button{
+    width: 162px;
+    height: 48px;
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 16px;
+    color: #E7D388;
+    outline: none;
+    background: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #BC9A5B;
+}
+
+/* FAQ Section */
+
+.faq-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+}
+
+.faq-container{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container--imgBox{
+    width: 466px;
+    height: 466px;
+    background-color: #D9D9D9;
+}
+
+.container-questionsBox{
+    width: 563px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.questionsBox-heading{
+    width: 421px;
+    height: 45px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 30px;
+    color: #CCA662;
+}
+
+.content-box1{
+    width: 563px;
+    height: 144px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 15px;
+    background-color: #494949;
+    position: relative;
+}
+
+.content-box2{
+    width: 563px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #494949;
+    border-radius: 6px;
+}
+
+.content-box3{
+    width: 563px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #494949;
+    border-radius: 6px;
+}
+
+.headingTxt{
+    width: 523px;
+    height: 24px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+
+.box1-paragraph{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    color: #C8C8C8;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+/* ------------------ */
+
+.be-informed-Section{
+    width: 100%;
+    height: 124px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+}
+
+.beInformed-container{
+    width: 1160px;
+    height: 124px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #CBA560;
+}
+
+.beInformed--title{
+    width: 384px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.title--heading{
+    width: 295px;
+    height: 37px;
+    font-family: Arial;
+    font-size: 32px;
+    color: white;
+}
+
+.title-paragraph{
+    width: 384px;
+    height: 23px;
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+.beInformed--emailInput{
+    width: 260px;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.emailInput--titleBox{
+    width: 70px;
+    height: 27px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.emailInput--inputBox{
+    width: 169px;
+    height: 4px;
+    background-color: white;
+}
+
+.beInformed--subscribeButton{
+    width: 247px;
+    height: 60px;
+}
+
+.beInformed--subscribeButton > button{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial;
+    text-transform: uppercase;
+    color: black;
+    cursor: pointer;
+    background-color: white;
+}
+
+footer{
+    width: 100%;
+    height: 354px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #232323;
+}
+
+.comp-logoBox{
+    width: 267px;
+    height: 146px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.logoBox--logoVector{
+    width: 168px;
+    height: 57px;
+    background-image: url("../../assets/vectors/amroyanLogo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.logoBox--title{
+    width: 267px;
+    height: 72px;
+    text-align: start;
+    font-size: 16px;
+    font-family: "Open Sans";
+    color: #737373;
+}
+
+.website-linksBox{
+    width: 270px;
+    height: 171px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linksItem{
+    width: 86px;
+    height: 171px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.linksHeader{
+    font-family: Poppins;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.links-pages{
+    color: #737373;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: "Open Sans";
+}
+
+.connectBox{
+    width: 267px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.connectBox--heading{
+    width: 163px;
+    height: 30px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+
+.connectBox--socials{
+    width: 208px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-item{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.connectBox--footer{
+    width: 267px;
+    height: 46px;
+    text-align: center;
+    font-family: Arial;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: start;
+    color: white;
+}
+
+.highlight{
+    color: #CBA560;
+}
+
+.leftBottomDecorative{
+    width: 400px;
+    height: 380px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url("../../assets/vectors/footerDecorativeLeft.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footerRightDecorative{
+    width: 340px;
+    height: 1010px;
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+    background-image: url("../../assets/vectors/footerRightDecorative.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
