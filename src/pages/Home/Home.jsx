@@ -1,6 +1,8 @@
 // Pages and Components
 import App from '../../App';
 import Header from '../../components/header/Header';
+import React, { useState, useEffect } from 'react';
+import Footer from '../../components/footer/Footer';
 // Styles
 import '../../App.css'
 import './Home.css'
@@ -8,7 +10,11 @@ import './Home.css'
 function Home() {
   return (
     <div className='main'>
-        <Header/>
+      <div>
+        <>
+          <Header/>
+        </>
+      </div>
         <section className='home-mainBanner'>
            <div className='mainBanner-childBox1'>
                 <div className='blackBackgroundBox'>
@@ -328,55 +334,7 @@ function Home() {
       <div className='seperator-box'></div>
       <div className='seperator-box'></div>
       <div className='seperator-box'></div>
-      <footer>
-          <div className='comp-logoBox'>
-            <div className='logoBox--logoVector'></div>
-            <div className='logoBox--title'>
-              <p>Amet minim mollit non deserunt
-                ullamco est sit aliqua dolor do amet
-                sintelit officia consequat</p>
-            </div>
-          </div>
-          <div className='website-linksBox'>
-            <div className='linksItem'>
-              <p className='linksHeader'>Heading</p>
-              <p className='links-pages'>Link here</p>
-              <p className='links-pages'>Link here</p>
-              <p className='links-pages'>Link here</p>
-              <p className='links-pages'>Link here</p>
-            </div>
-            <div className='linksItem'>
-              <p className='linksHeader'>Heading</p>
-              <p className='links-pages'>Link here</p>
-              <p className='links-pages'>Link here</p>
-              <p className='links-pages'>Link here</p>
-              <p className='links-pages'>Link here</p>
-            </div>
-            <div className='linksItem'>
-              <p className='linksHeader'>Heading</p>
-              <p className='links-pages'>Link here</p>
-              <p className='links-pages'>Link here</p>
-              <p className='links-pages'>Link here</p>
-              <p className='links-pages'>Link here</p>
-            </div>
-          </div>
-          <div className='connectBox'>
-            <div className='connectBox--heading'>
-              <p>Connect with us</p>
-            </div>
-            <div className='connectBox--socials'>
-              <div className='social-item'></div>
-              <div className='social-item'></div>
-              <div className='social-item'></div>
-              <div className='social-item'></div>
-            </div>
-            <div className='connectBox--footer'>
-                Կայքի դիզայնը և մշակումը իրականցվել է <span className='highlight'>Global IT Academy</span>-ի կողմից 2024թ․
-            </div>
-          </div>
-          <div className='leftBottomDecorative'></div>
-          <div className='footerRightDecorative'></div>
-      </footer>
+      <Footer/>
     </div>
   );
 }
